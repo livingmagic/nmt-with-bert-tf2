@@ -1,9 +1,18 @@
-# text-models
-For text models using tensorflow 2.0
+# nmt-with-bert-tf2
+A Transformer model to translate Chinese to English using pre-trained model BERT as encoder in Tensorflow 2.0.
+
+## Usage
+
+you can use the Google Colab notebook:
+
+[nmt_with_transformer.ipynb](https://colab.research.google.com/github/livingmagic/nmt-with-bert-tf2/blob/master/nmt_with_transformer.ipynb)
+
+
 
 ## Using BERT to extract fixed feature vectors (like ELMo)
 
-The chinese BERT pre-trained model: https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip
+The chinese BERT pre-trained model: 
+https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip
 
 ```
 # Sentence A and Sentence B are separated by the ||| delimiter for sentence
@@ -22,10 +31,8 @@ python extract_features.py \
   --batch_size=8
 ```
 
-## Loading zh-en translation dataset
-```python
-import tensorflow_datasets as tfds
+## Resources
 
-data, info = tfds.load("wmt19_translate/zh-en", with_info=True)
-print(info)
-```
+- [BERT](https://arxiv.org/abs/1810.04805) - BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
+- [google-research/bert](https://github.com/google-research/bert) - the original BERT implementation
+- [kpe/bert-for-tf2](https://github.com/kpe/bert-for-tf2) - A Keras TensorFlow 2.0 implementation of BERT. 
