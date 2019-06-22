@@ -3,9 +3,7 @@ A Transformer model to translate Chinese to English using pre-trained model BERT
 
 ## Usage
 
-you can use the Google Colab notebook:
-
-[nmt_with_transformer.ipynb](https://colab.research.google.com/github/livingmagic/nmt-with-bert-tf2/blob/master/nmt_with_transformer.ipynb)
+you can use the Google Colab notebook: nmt_with_transformer.ipynb](https://colab.research.google.com/github/livingmagic/nmt-with-bert-tf2/blob/master/nmt_with_transformer.ipynb)
 
 
 
