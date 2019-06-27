@@ -15,7 +15,7 @@ def create_look_ahead_mask(size):
 
 
 def test():
-    seq = tf.random.uniform((64, 128))
+    seq = tf.constant([[0, 1, 2], [1, 2, 3]])
     dec_target_padding_mask = create_padding_mask(seq)
     look_ahead_mask = create_look_ahead_mask(seq.shape[1])
 
