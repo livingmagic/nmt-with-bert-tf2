@@ -45,7 +45,7 @@ The chinese BERT pre-trained model used here is: [BERT-Base, Chinese](https://st
 # pair tasks like question answering and entailment.
 # For single sentence inputs, put one sentence per line and DON'T use the
 # delimiter.
-echo '我不是故意说的。 ||| 真心话大冒险！\n富士康科技集团发声明否认“撤离大陆”?' > /tmp/input.txt
+echo '我不是故意说的。 ||| 真心话大冒险！\n富士康科技集团发声明否认“撤离大陆”?' > tmp/input.txt
 
 python extract_features.py \
   --input_file=tmp/input.txt \
